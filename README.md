@@ -216,19 +216,19 @@ Below are outputs against the actual dataset (500 tickets, Jan–Mar 2024).
 
 ## 6. Project Structure
 
-support-ticket-ai/
-├── app/
-│ ├── main.py # FastAPI app and routes
-│ ├── db.py # CSV -> SQLite loading, safe query execution
-│ ├── llm.py # Groq NL->SQL and answer summarization
-│ └── anomalies.py # Rule-based anomaly detection
-├── ui/
-│ └── streamlit_app.py # Minimal UI, thin client of the API
-├── data/
-│ └── support_tickets.csv
-├── run.py # Single-command launcher (API + UI)
-├── requirements.txt
-├── Dockerfile
-├── docker-compose.yml
-├── .env.example
-└── README.md
+    support-ticket-ai/
+    ├── app/
+    │ ├── main.py # FastAPI app and routes
+    │ ├── db.py # CSV -> SQLite loading, safe query execution
+    │ ├── llm.py # Groq NL->SQL and answer summarization
+    │ └── anomalies.py # Rule-based anomaly detection
+    ├── ui/
+    │ └── streamlit_app.py # Minimal UI, thin client of the API
+    ├── data/
+    │ └── support_tickets.csv
+    ├── run.py # Single-command launcher (API + UI)
+    ├── requirements.txt
+    ├── Dockerfile
+    ├── docker-compose.yml
+    ├── .env.example
+    └── README.md
