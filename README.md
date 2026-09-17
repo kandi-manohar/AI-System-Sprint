@@ -232,3 +232,20 @@ Below are outputs against the actual dataset (500 tickets, Jan–Mar 2024).
     ├── docker-compose.yml
     ├── .env.example
     └── README.md
+## 6. Outputs
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9326ab83-6b77-4c20-b572-542d21ba7f62" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a4be9c74-e445-486b-84dd-ddf37e767145" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/96cbf4aa-e40a-42c8-a3d6-dfb45f2a76fc" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dfea06d8-52e4-4139-b8e6-3a67162837cf" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a9dd5de2-76ee-482b-88b0-89fa86244a3f" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e93332b2-c141-4288-9a56-77c17a502c6c" />
+
+
+
+
+
