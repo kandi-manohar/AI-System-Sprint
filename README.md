@@ -43,7 +43,7 @@ docker-compose up
 ```
 
 ## 2. Architecture
-                     ┌─────────────────────┐
+                    ┌─────────────────────┐
                      │  support_tickets.csv │
                      └──────────┬───────────┘
                                 │ loaded once, idempotent
@@ -54,25 +54,25 @@ docker-compose up
                                 │
             ┌───────────────────┼────────────────────┐
             ▼                                          ▼
- ┌─────────────────────┐                   ┌─────────────────────────┐
- │  NL Query Pipeline    │                   │  Anomaly Detection       │
- │  (app/llm.py)         │                   │  (app/anomalies.py)      │
- │  question -> SQL       │                   │  rule/stats-based,       │
- │  (Groq LLM) -> execute │                   │  no LLM call needed      │
- │  -> NL answer (Groq)   │                   │                          │
- └───────────┬────────────┘                   └────────────┬─────────────┘
-             │                                              │
-             └───────────────────┬──────────────────────────┘
-                                  ▼
-                      ┌─────────────────────┐
-                      │   FastAPI (app/main.py) │
-                      │  /health /query /anomalies /schema │
-                      └───────────┬──────────┘
-                                  ▼
-                      ┌─────────────────────┐
-                      │ Streamlit UI (ui/)    │
-                      │ thin HTTP client       │
-                      └─────────────────────┘
+     ┌─────────────────────┐                   ┌─────────────────────────┐
+     │  NL Query Pipeline    │                   │  Anomaly Detection       │
+     │  (app/llm.py)         │                   │  (app/anomalies.py)      │
+     │  question -> SQL       │                   │  rule/stats-based,       │
+     │  (Groq LLM) -> execute │                   │  no LLM call needed      │
+     │  -> NL answer (Groq)   │                   │                          │
+     └───────────┬────────────┘                   └────────────┬─────────────┘
+                 │                                              │
+                 └───────────────────┬──────────────────────────┘
+                                      ▼
+                          ┌─────────────────────┐
+                          │   FastAPI (app/main.py) │
+                          │  /health /query /anomalies /schema │
+                          └───────────┬──────────┘
+                                      ▼
+                          ┌─────────────────────┐
+                          │ Streamlit UI (ui/)    │
+                          │ thin HTTP client       │
+                          └─────────────────────┘
 
 ### Why these choices
 
